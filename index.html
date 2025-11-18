@@ -1,79 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dr. Nasir N. Hurrah — Research & CV</title>
-  <style>
-    :root{--accent:#0b6}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;color:#111;line-height:1.45}
-    header{background:linear-gradient(90deg,#0b6 0%, #079 100%); color:#fff;padding:36px 20px}
-    main{padding:28px;max-width:980px;margin:0 auto}
-    h1{margin:0;font-size:30px}
-    .sub{opacity:0.95;margin-top:6px}
-    .row{display:flex;flex-wrap:wrap;gap:20px;margin-top:18px}
-    .card{background:#f8f8f8;padding:16px;border-radius:8px;flex:1 1 300px;min-width:220px}
-    a{color:var(--accent);text-decoration:none}
-    .pubs li{margin-bottom:10px}
-    footer{padding:20px;text-align:center;color:#666;font-size:14px}
-    .photo{width:110px;height:110px;border-radius:8px;background:#eee;display:inline-block;object-fit:cover}
-    .btn{display:inline-block;padding:8px 12px;border-radius:6px;background:#fff;color:var(--accent);font-weight:600;text-decoration:none;margin-top:8px}
-    @media(max-width:700px){.row{flex-direction:column}}
-  </style>
+  <meta charset="UTF-8">
+  <title>Dr. Nasir N. Hurrah — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dr. Nasir N. Hurrah — Assistant Professor, Department of Electronics & IT, University of Kashmir. Research in IoT, embedded systems, signal processing, information security and image processing.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div style="max-width:980px;margin:0 auto;display:flex;align-items:center;gap:18px">
-      <img src="photo.jpg" alt="Your photo" class="photo" onerror="this.style.display='none'">
-      <div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-brand">Dr. Nasir N. Hurrah</a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="projects.html">Projects & Code</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="hero-text">
         <h1>Dr. Nasir N. Hurrah</h1>
-        <div class="sub">Assistant Professor — Department of Electronics & IT, University of Kashmir, Srinagar, India</div>
-        <div style="margin-top:8px">
-          <a class="btn" href="https://electronics.uok.edu.in/main/ProfilePage.aspx?Profile=P3735" target="_blank" rel="noopener">University profile</a>
-          <a class="btn" href="mailto:nasirnabi@kashmiruniversity.net" style="margin-left:8px">Email</a>
+        <h2>Assistant Professor, Department of Electronics & IT<br>University of Kashmir, Srinagar, India</h2>
+        <p class="tagline">
+          Research in Internet of Things (IoT), embedded systems, signal processing, information security,
+          and image processing for industrial and healthcare applications.
+        </p>
+
+        <div class="hero-links">
+          <!-- Update href with your actual CV file when you add it -->
+          <a href="files/NasirHurrah_CV.pdf" class="btn">Download CV (PDF)</a>
+          <a href="https://scholar.google.co.in" class="btn-outline" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/nasirhurrah" class="btn-outline" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
-    </div>
-  </header>
 
-  <main>
-    <section class="row">
-      <div class="card" style="flex:2 1 540px">
-        <h2>About</h2>
-        <p><strong></strong> "I am currently working as Assistant Professor at University of Kashmir. I recently completed my three year Postdoc in Oct. 2024 at Aligarh Muslim University in the area: Protection of Visual-IoT (VIoT) data against Cyber Attacks and completed my Ph.D. at the University of Kashmir in 2020. I have rich experience of teaching/research in the areas of Signal Processing, Internet of Things (IoT), Embedded Systems, Information Security, Image processing, communication engineering, and other engineering courses, and in various academic and professional service activities. I have done a significant work in these fields and published my work in various SCI journals of IEEE, Elsevier and Springer. Besides I have worked as an editor of a book published in Springer Nature and supervised many projects done using MATLAB, Python and Arduino."</p>
-
-        <h3 style="margin-top:14px">Teaching/Research Interests</h3>
-        <p> Embedded systems, Internet of Things (IoTs), Digital Signal Processing & Architecture, Circuit Analysis and Synthesis, Signals & Systems, Digital Electronics, Consumer Electronics, Computing & Informatics, VLSI Design, Communication Engineering, Communication Networks, Disease Detection using Machine Learning, Image Processing, Security for E-Healthcare, Industry 4.0, Natural Language Processing (NLP), Information Security, Cryptography.</p>
-
-        <h3 style="margin-top:14px">Selected Publications</h3>
-        <ol class="pubs">
-          <li>Nasir, Hurrah; <em>INDFORG: Industrial Forgery Detection using Automatic Rotation Angle Detection and Correction</em>; IEEE Trans. on Industrial Informatics, 2021. <a href="https://ieeexplore.ieee.org/document/9189812">PDF</a></li>
-          <li>Dual Watermarking Framework for Industrial Image Authentication and Tamper Localization</em>; IEEE Trans. on Industrial Informatics, 2021. <a href="https://ieeexplore.ieee.org/document/9214433">PDF</a></li>
-          <li>Secure Data Transmission Framework for Confidentiality in IoTs</em>; Ad Hoc Networks, 2019. <a href="https://doi.org/10.1016/j.adhoc.2019.101989">PDF</a></li>
-        </ol>
-      </div>
-
-      <div class="card">
-        <h2>Teaching</h2>
-        <ul>
-          <li>Course: DSP & Architecture — <a href="https://drive.google.com/drive/u/8/folders/1v_WmxgJ7epn3Prbo8flVn1c5r5O9U6_0">Slides</a> </li>
-          <li>Course: Embedded Systems — <a href="https://drive.google.com/drive/u/8/folders/1v_WmxgJ7epn3Prbo8flVn1c5r5O9U6_0">Slides</a> </li>
-        </ul>
-
-        <h2 style="margin-top:12px">Projects & Code</h2>
-        <p>Link to GitHub repos or demo pages.</p>
-
-        <h2 style="margin-top:12px">Contact</h2>
-        <p>Email: <a href="mailto:you@domain.com">hnasirg01@gmail.com</a></p>
-        <p>Links: <a href="https://scholar.google.co.in/citations?user=Ztnv3aUAAAAJ&hl=en">Google Scholar | </a> <a href="https://www.linkedin.com/in/dr-nasir-hurrah-7171571b0/">LinkedIn</a></p>
+      <div class="hero-photo">
+        <!-- Put your photo in /images/profile.jpg -->
+        <img src="images/profile.jpg" alt="Dr. Nasir N. Hurrah">
       </div>
     </section>
+
+    <!-- About -->
+    <section>
+      <h2>About</h2>
+      <p>
+        I am currently working as an Assistant Professor in the Department of Electronics & IT,
+        University of Kashmir, Srinagar, India. I recently completed a three-year Post-Doctoral
+        Fellowship in October 2024 at Aligarh Muslim University in the area of protection of
+        Visual-IoT (VIoT) data against cyber attacks, and I obtained my Ph.D. from the University
+        of Kashmir in 2020.
+      </p>
+      <p>
+        I have rich experience of teaching and research in signal processing, Internet of Things (IoT),
+        embedded systems, information security, image processing, communication engineering, and other
+        core electronics and IT courses. I have published my work in leading SCI-indexed journals of
+        IEEE, Elsevier and Springer, edited a book with Springer Nature, and supervised several projects
+        using MATLAB, Python and Arduino.
+      </p>
+    </section>
+
+    <!-- Research snapshot -->
+    <section>
+      <h2>Research Snapshot</h2>
+      <p>My current research is focused on the following broad themes:</p>
+      <ul>
+        <li>Secure and reliable Internet of Things (IoT) and Visual-IoT systems</li>
+        <li>Digital signal processing and embedded system architectures</li>
+        <li>Industrial image authentication, watermarking and forgery detection</li>
+        <li>Machine learning for disease detection and e-Healthcare security</li>
+        <li>Image processing, cryptography and information security</li>
+      </ul>
+      <p>
+        For more details, see the <a href="research.html">Research</a> and
+        <a href="publications.html">Publications</a> pages.
+      </p>
+    </section>
+
+    <!-- Recent news / updates -->
+    <section>
+      <h2>News &amp; Updates</h2>
+      <ul class="news-list">
+        <li><strong>Oct 2024:</strong> Completed three-year Post-Doctoral Fellowship at Aligarh Muslim University.</li>
+        <li><strong>2021:</strong> Published work on industrial forgery detection and dual watermarking in <em>IEEE Transactions on Industrial Informatics</em>.</li>
+        <li><strong>2019–2024:</strong> Ongoing work on secure data transmission for IoT and e-Healthcare applications.</li>
+        <!-- Add new items here as things happen -->
+      </ul>
+    </section>
+
+    <!-- Highlighted publications -->
+    <section>
+      <h2>Selected Publications</h2>
+      <ol class="pub-list">
+        <li>
+          Nasir N. Hurrah,
+          <em>"INDFORG: Industrial Forgery Detection using Automatic Rotation Angle Detection and Correction"</em>,
+          IEEE Transactions on Industrial Informatics, 2021.
+          <a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener">[PDF / DOI]</a>
+        </li>
+        <li>
+          <em>"Dual Watermarking Framework for Industrial Image Authentication and Tamper Localization"</em>,
+          IEEE Transactions on Industrial Informatics, 2021.
+          <a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener">[PDF / DOI]</a>
+        </li>
+        <li>
+          <em>"Secure Data Transmission Framework for Confidentiality in IoTs"</em>,
+          Ad Hoc Networks, 2019.
+          <a href="https://doi.org" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+      </ol>
+      <p>
+        Full list of publications is available on the <a href="publications.html">Publications</a> page.
+      </p>
+    </section>
+
+    <!-- Teaching teaser -->
+    <section>
+      <h2>Teaching</h2>
+      <p>
+        I regularly teach courses in Digital Signal Processing &amp; Architecture, Embedded Systems,
+        communication engineering and related areas. Course materials (slides, problem sheets and code)
+        are available on the <a href="teaching.html">Teaching</a> page.
+      </p>
+    </section>
+
   </main>
 
-  <footer>
-    © <span id="yr"></span> Dr. Nasir N. Hurrah
+  <footer class="footer">
+    <p>
+      &copy; <span id="year"></span> Dr. Nasir N. Hurrah.
+      Department of Electronics &amp; IT, University of Kashmir, Srinagar, India.
+    </p>
   </footer>
 
-  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
